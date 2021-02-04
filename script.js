@@ -6,10 +6,6 @@ let weather = {
         .then((data) => this.displayweather(data));
     },
     displayweather: function(data) {
-        var w = screen.availWidth;
-        var h = screen.availHeight;
-        console.log(w);
-        console.log(h);
         const { name } = data;
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
